@@ -1,0 +1,155 @@
+﻿#mainpanel {
+    background-color: lightgreen;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    display: flex;
+    flex-direction: row
+}
+
+
+
+#NetPanel {
+    width: 200px;
+    display: flex;
+    flex-direction: column
+}
+
+#NodePanel {
+    width: 250px;
+    display: flex;
+    flex-direction: column
+}
+
+#Gamecolumn {
+    width: 700px;
+    display: flex;
+    flex-direction: column;
+}
+
+#GamePanel {
+    display: flex;
+    flex-direction: row;
+}
+
+#GameTitle {
+    font-size:28px;
+}
+
+#GameDetailsPanel {
+    display: flex;
+    flex-direction: column;
+    margin: 2px;
+    width:364px
+}
+
+#GameButtonsPanel {
+    display: flex;
+    flex-direction: row;
+}
+
+#PlayerDetailsPanel {
+    display: flex;
+    flex-direction: row;
+    margin:1px;
+  
+
+}
+
+#NACGridRows {
+    display: flex;
+    flex-direction: column;
+    margin: 2px
+}
+
+#TL, #TC, #CL, #CC {
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+    border-right-color: black;
+    border-right-width: 3px
+}
+
+#TR, #CR {
+    border-bottom-color: black;
+    border-bottom-width: 3px;
+}
+
+#BL, #BC{
+   
+    border-right-color: black;
+    border-right-width: 3px
+}
+.GameControlButtons {
+    margin:1px;
+    width:155px;
+}
+.AIMovesTable {
+    height:250px;
+}
+.AIMovesPanel {
+    display: flex;
+    flex-direction: column;
+    background-color:paleturquoise;
+    
+
+}
+.NACButtons {
+    height:106px;
+    width:106px;
+    border-color:black;
+    border-width:1px;
+    font-size: 48px;
+    
+    
+}
+.PlayerPanels {
+    display: flex;
+    flex-direction: column;
+    width: 120px;
+    background-color:paleturquoise
+}
+.subpanel {
+    margin: 2px;
+    background-color: lavender;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    text-align: center
+}
+
+.AIChecks {
+    display: flex;
+    flex-direction: row;
+    text-align: center
+}
+.NACGridColumns {
+    display: flex;
+    flex-direction: row
+}
+
+.title {
+    text-align: center;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 1px
+}
+
+.InlinePanel {
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 1px
+}
+
+table, th, tr, td {
+    border-collapse: collapse;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+    margin: 1px
+}
+
+th {
+    background-color: lavenderblush
+}

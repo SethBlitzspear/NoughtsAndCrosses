@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="nac" Class="NACDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=sjmdb.database.windows.net;Initial Catalog=nac;User ID=StuartMaher;Connect Timeout=30;Encrypt=True;TrustServerCertificate=False" SettingsObjectName="NACBackEnd.Properties.Settings" SettingsPropertyName="nacConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.Node" Member="Nodes">
+    <Type Name="Node">
+      <Column Name="Id" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Weight" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Net" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Turn" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Association Name="Net_Node" Member="Net1" ThisKey="Net" OtherKey="Name" Type="Net" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="dbo.Net" Member="Nets">
+    <Type Name="Net">
+      <Column Name="Name" Type="System.String" DbType="VarChar(50) NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="Win" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Loss" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Draw" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="P1Sequence" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Column Name="P2Sequence" Type="System.String" DbType="VarChar(MAX)" CanBeNull="true" />
+      <Association Name="Net_Node" Member="Nodes" ThisKey="Name" OtherKey="Net" Type="Node" />
+    </Type>
+  </Table>
+</Database>

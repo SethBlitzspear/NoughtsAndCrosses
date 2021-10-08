@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="NAC">
+  <DataContextMoniker Name="/NACDataContext" />
+  <nestedChildShapes>
+    <classShape Id="54343b7c-0250-4532-8887-bda852923999" absoluteBounds="5.125, 2.5, 2, 1.5785953776041666">
+      <DataClassMoniker Name="/NACDataContext/Node" />
+      <nestedChildShapes>
+        <elementListCompartment Id="89b36318-b3e2-4ae5-a51e-3c3a0aea7e40" absoluteBounds="5.14, 2.96, 1.9700000000000002, 1.0185953776041665" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <classShape Id="3545087a-d465-4c01-a977-9f5a8f26b103" absoluteBounds="1.75, 2, 2, 1.9631982421875">
+      <DataClassMoniker Name="/NACDataContext/Net" />
+      <nestedChildShapes>
+        <elementListCompartment Id="1251d5ff-57c6-4f84-b213-0ea1d8b05324" absoluteBounds="1.7650000000000001, 2.46, 1.9700000000000002, 1.4031982421875" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+    <associationConnector edgePoints="[(3.75 : 3.23159912109375); (5.125 : 3.23159912109375)]" fixedFrom="Algorithm" fixedTo="Algorithm">
+      <AssociationMoniker Name="/NACDataContext/Net/Net_Node" />
+      <nodes>
+        <classShapeMoniker Id="3545087a-d465-4c01-a977-9f5a8f26b103" />
+        <classShapeMoniker Id="54343b7c-0250-4532-8887-bda852923999" />
+      </nodes>
+    </associationConnector>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
